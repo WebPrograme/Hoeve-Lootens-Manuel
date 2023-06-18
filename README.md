@@ -1,208 +1,69 @@
-
 # Documentation
 
 Hier vindt je een korte uitleg om de website Hoeve Lootens te bewerken.
 
-## Download van de server
-Open FileZilla.
+## GitHub
 
-Login met de gegevens in de doorgestuurde email (ik kan deze hier niet delen voor veiligheidsredenen).
+Als u voor de eerste keer GitHub gebruikt zal u eerst moeten inloggen. Dit doe je als volgt:
 
-Eens ingelogd ga je naar de public_html folder. Sleep alle files en folders naar links naar uw gewenste folder.
+- Ga naar [github.com](https://github.com/) en klik bovenaan rechts op "Sign in"
+- Log dan in met de gegeven gegevens (voor veiligheids redenen kan je deze hier niet vinden).
 
-Open dan Visual Studio Code om te editen.
+Nu u ingelogt bent kan u een link onderaan kiezen aan de hand van de pagina die wenst te veranderen.
 
-## Home
+| Pagina  |  Link |
+|---|---|
+| Home  | [HOME.md](https://github.com/WebPrograme/Hoeve-Lootens/blob/master/HOME.md)  |
+| Verbouwingen  | [VERBOUWING.md](https://github.com/WebPrograme/Hoeve-Lootens/blob/master/VERBOUWING.md)  |
 
-De home page kunt u vinden onder de file `index.html`.
+Wanneer je de pagina gevonden hebt, klik je op het potloodje rechts van het scherm.
 
-Naast de volgende uitleg om artikelen toe tevoegen kunt u in theorie alle tekst veranderen in deze file die zichtbaar is op de website. Al is dit niet 100% aangeraden.
+![Edit](edit.png)
 
-### Nieuws
+## Editen
 
-- #### Zigzag regel
-    Er bestaan twee soorten artikelen waarbij de ene start met een afbeelding en de andere met tekst.
-    
-    **Het eerste artikel moet altijd starten met een afbeelding.** 
-    
-    De volgorde van de artikelen moet altijd als volgt zijn:
+Nu kan u veranderingen doen, hier is een korte samenvating.
 
-    - Type 1 (start met **afbeelding**)
-    - Type 2 (start met **tekst**) 
-    - Type 1
-    - Type 2
-    - ...
+Artikels worden onderscheiden door een reeks '=' tekens. Dus als u een nieuw artikel wilt toevoegen, werk je er onder of voeg je de tekens toe als deze er nog niet staan. HET IS BELANGRIJK DAT ER ALTIJD 50 TEKENS STAAN.
 
-- #### Template
-    Voeg de gewenste code toe aan de hand van het gewenste type.
-    - **Type 1**
-    ```html
-    <section class="section slideUp bottom">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 align-self-center text-center text-md-left">
-					<div class="block content">
-						<h3 class="font-weight-bold mb-4 font-size-60">
-							ARTIKEL TITEL
-						</h3>
-						<p>ARTIKEL TEKST</p>
-                        <!--EXTRA TEKST-->
-					</div>
-				</div>
-				<div class="col-md-6 text-center mb-5 mb-md-0">
-					<img class="side-image" src="images\AFBEELDING NAAM">
-				</div>
-			</div>
-		</div>
-	</section>
-    ```
-    - **Type 2**
-    ```html
-    <section class="section slideUp bottom">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 text-center mb-5 mb-md-0">
-					<img class="side-image" src="images\AFBEELDING NAAM" alt="Boomgaardcafé">
-				</div>
-				<div class="col-md-6 align-self-center text-center text-md-left">
-					<div class="block content">
-						<h3 class="font-weight-bold mb-4 font-size-60">
-							ARTIKEL TITEL
-						</h3>
-						<p>ARTIKEL TEKST</p>
-                        <!--EXTRA TEKST-->
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-    ```
+Op de eerste lijn van je nieuw artikel staat je titel. Dit kan meerdere woorden zijn.
 
-- #### Customize
-    - **Titel**
+Om een afbeelding toe te voegen, schrijf je op een nieuwe lijn het volgende:
+`IMAGE:` vervolgt met de naam en het type van de afbeelding.
+(bv. IMAGE: voorbeeld.png). Pasop! Er moet altijd een spatie tussen het dubbelpunt en de naam.
 
-        Vervang **ARTIKEL TITEL** door uw gewenste titel tekst.
+Om tekst toe te voegen, schrijf je op een nieuwe lijn het volgende:
+`TEXT:` vervolgt met de gewenste tekst. Je kan op een volgende lijn verder schrijven als je een nieuwe paragraaf wilt starten.
 
-    - **Tekst**
+### **Knoppen zijn alleen voor de HOME pagina**
 
-        Vervang **ARTIKEL TEKST** door uw gewenste tekst.
-        
-        Indien u een extra tekst lijn wenst, vervang `<!--EXTRA TEKST-->` met `<p>ARTIKEL TEKST</p>` (Vervang natuurlijk **ARTIKEL TEKST** door uw gewenste tekst.).
+Om een knop toe te voegen, schrijf je op een nieuwe lijn het volgende:
+`LINKS:` vervolgt met de link naar een externe website of een interne pagina (zie de tabel onderaan voor de links). Na de link schrijf je '||' en ten slotte de tekst die u op de knop wilt. (bv. `LINKS: <https://www.hoevelootens.be> || Voorbeeld). Let op! Voor en na de '||' moet er een spatie.
 
-        - **Bold tekst**
-            
-            Vervang de gewenste bold tekst met `<span class="email">BOLD TEKST</span>`. Hierna vervangt u **BOLD TEKST** met de gewenste bold tekst.
-    
-    - **Afbeelding**
+Hier is een tabel voor de interne links:
 
-        Voordat u begint zorg er voor dat de gewenste afbeelding zich bevindt in de folder **images**.
-        
-        Hierna vervang je **AFBEELDING NAAM** met de naam van uw gewenste afbeelding + het formaat van de afbeelding (.png, .jpg, .webp, ...).
+| Pagina  |  Link |
+|---|---|
+| Verbouwingen  | pages/verbouwing.html |
+| Kalender  | pages/kalender.html |
+| Reserveren  | pages/reserveren.html |
+| Maatschappelijke Projecten  | pages/maatschappelijk.html |
+| Geschiedenis  | pages/geschiedenis.html |
+| Contact  | pages/contact.html |
+| Inschrijven voor activiteien  | pages/shop.html |
+| Inschrijven voor eten  | pages/form.html |
 
-    - **Knop**
+***
+Hier is een voorbeeld van een voor en na:
 
-        Voeg onder uw laatste tekst de volgende code:
+#### **VOOR**
 
-        ```
-        <a class="btn btn-main btn-main-sm" href="BUTTON LINK" role="button">BUTTON TEKST</a>
-        ```
+![Voor](voor.png)
 
-        Zoals het voorbeeld hieronder:
-        ```
-        <div class="block content">
-            <h3 class="font-weight-bold mb-4 font-size-60">
-				ARTIKEL TITEL
-			</h3>
-			<p>ARTIKEL TEKST</p>
-            <a class="btn btn-main btn-main-sm" href="BUTTON LINK" role="button">BUTTON TEKST</a>
-        </div>
-        ```
+#### **NA**
 
-        Vervang hierna **BUTTON TEKST** met de tekst die u wenst op de knop.
+![Na](na.png)
 
-        Indien u een link wilt gebruiken van een andere website, Vervangt u **BUTTON LINK** met de gewenste link.
+## Opslaan
 
-        Maar indien u een pagina wilt openen van de website Hoeve Lootens zelf, kunt u de onderstaande tabel raadplegen om de nodige link te vinden.
-
-        | Pagina        | Link          |
-        | ------------- |-------------| 
-        | Kalender      | `html/kalender.html` | 
-        | Reserveren      | `html/reserveren.html` | 
-        | Maatschappelijke projecten      | `html/maatschappelijk.html` | 
-        | Geschiedenis      | `html/geschiedenis.html` | 
-        | Contact      | `html/contact.html` | 
-        | Verbouwingen      | `html/verbouwing.html` | 
-
-## Verbouwing
-De home page kunt u vinden onder de file `html/verbouwing.html`
-
-Net zoals de Nieuws pagina geldt de zigzag regel.
-
-Als u wenst om een iets toe te voegen aan de tijdlijn checkt u de laatste toevoeging. Als deze links staat gebruikt u type 1 anders gebruikt u type 2.
-
-
-- **Type 1**
-    ```html
-        <div class="timelineContainer timelineRight">
-            <div class="timelineContent KLEUR">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2>DATUM</h2>
-                        <p>ARTIKEL TEKST</p>
-                    </div>
-                    <div class="col-md-6">
-                        <img class="timeline-img" src="../images/AFBEELDING NAAM">
-                    </div>
-                </div>
-            </div>
-        </div>
-    ```
-- **Type 2**
-    ```html
-        <div class="timelineContainer timelineLeft">
-            <div class="timelineContent KLEUR">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2>DATUM</h2>
-                        <p>ARTIKEL TEKST</p>
-                    </div>
-                    <div class="col-md-6">
-                        <img class="timeline-img" src="../images/AFBEELDING NAAM">
-                    </div>
-                </div>
-            </div>
-        </div>
-    ```
-
-- #### Customize
-    - **Datum**
-
-        Vervang **DATUM** met de gewenste datum.
-    - **ARTIKEL TEKST**
-
-        Vervang **ARTIKEL TEKST** met de gewenste tekst.
-    - **AFBEELDING NAAM**
-
-        Voordat u begint zorg er voor dat de gewenste afbeelding zich bevindt in de folder **images**.
-        
-        Hierna vervang je **AFBEELDING NAAM** met de naam van uw gewenste afbeelding + het formaat van de afbeelding (.png, .jpg, .webp, ...).
-    - **KLEUR**
-
-        Check de kleur van de vorige toevoeging. Vervang **KLEUR** met de bijhorende code van de volgende kleur in de onderste tabel.
-
-        | Kleur        | Code          |
-        | ------------- |-------------| 
-        | Blue      | timelineBlue | 
-        | Rose      | timelineRose | 
-        | Brown      | timelineBrown | 
-        | Yellow      | timelineYellow | 
-
-## Upload op de server
-
-Wanneer u klaar bent gebruikt u het programma FileZilla.
-
-Login met de gegevens in de doorgestuurde email (ik kan deze hier niet delen voor veiligheidsredenen).
-
-Eens ingelogd ga je naar de public_html folder. Hier in sleep je je alle files en folders van de code (Behalve de .git folder).
-
-Als er wordt gevraagd of u deze wilt overscrijven drukt u op ok.
+Om op te slaan klikt u op de groene knop rechts. U kan een beschrijving en een titel geven als u dit wenst (Een beschrijving is niet verplicht maar handig als we vorige versies zoeken). Ten slotte klikt u op de groene knop.
