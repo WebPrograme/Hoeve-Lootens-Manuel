@@ -13,8 +13,8 @@ Nu u ingelogt bent kan u een link onderaan kiezen aan de hand van de pagina die 
 
 | Pagina  |  Link |
 |---|---|
-| Home  | [HOME.md](https://github.com/WebPrograme/Hoeve-Lootens/blob/master/HOME.md)  |
-| Verbouwingen  | [VERBOUWING.md](https://github.com/WebPrograme/Hoeve-Lootens/blob/master/VERBOUWING.md)  |
+| Home  | [HOME.md](https://github.com/WebPrograme/Hoeve-Lootens/blob/master/MD/HOME.md)  |
+| Verbouwingen  | [VERBOUWING.md](https://github.com/WebPrograme/Hoeve-Lootens/blob/master/MD/VERBOUWING.md)  |
 
 Wanneer je de pagina gevonden hebt, klik je op het potloodje rechts van het scherm.
 
@@ -31,6 +31,8 @@ Op de eerste lijn van je nieuw artikel staat je titel. Dit kan meerdere woorden 
 Om een afbeelding toe te voegen, schrijf je op een nieuwe lijn het volgende:
 `IMAGE:` vervolgt met de naam en het type van de afbeelding.
 (bv. IMAGE: voorbeeld.png). Pasop! Er moet altijd een spatie tussen het dubbelpunt en de naam.
+
+Je kan een afbeelding kiezen uit een lijst die je [hier](https://github.com/WebPrograme/Hoeve-Lootens/blob/master/images) kan vinden. Je kan ook een afbeelding bekijken door er op te klikken. Als u een nieuwe afbeelding wenst die je niet kan vinden in de lijst kan je mij contacteren met de gewenste afbeelding.
 
 Om tekst toe te voegen, schrijf je op een nieuwe lijn het volgende:
 `TEXT:` vervolgt met de gewenste tekst. Je kan op een volgende lijn verder schrijven als je een nieuwe paragraaf wilt starten.
